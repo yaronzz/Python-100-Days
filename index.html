@@ -18,10 +18,59 @@
             repo: 'yaronzz/Python-100-Days',
             loadSidebar: true,
             auto2top: true,
+            subMaxLevel: 2,
+            // 底部导航
+            pagination: {
+                previousText: "上一页",
+                nextText: "下一页",
+                crossChapter: true,
+                crossChapterText: true,
+            },
+            // 字数统计
+            count: {
+                countable: true,
+                position: "top",
+                margin: "10px",
+                float: "right",
+                fontsize: "0.9em",
+                color: "green",
+                localization: {
+                    words: "",
+                    minute: "",
+                },
+                isExpected: true,
+            },
+            // 全文搜索
+            search: {
+                depth: 6,
+                noData: "NO RESULT!",
+                placeholder: "Search...",
+                namespace: "website-1",
+            },
         }
     </script>
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <!-- 底部 上一页下一页 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/ga.min.js"></script>
+    <!-- 代码复制 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+    <!-- 图片放大缩小 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+    <!-- 多tab支持 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
+    <!-- 字数统计 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
+    <!-- 全文搜索 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+    <!-- emoji -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+    <!-- 侧边栏目录折叠 -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script> -->
+
+
 </body>
 
 </html>
